@@ -1,9 +1,11 @@
 def sortedSquares(A):
+    
     # 第一种
     # List = []
     # for i in A:
     #     List.append(i**2)
     # return sorted(List)
+
     # 第一种优化
     return sorted([x * x for x in A])
 

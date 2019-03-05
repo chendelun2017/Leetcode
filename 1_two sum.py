@@ -11,7 +11,7 @@ def twoSum(nums, target):
                 return (dict[another_num], index)
             dict[num] = index
 
-
-[i,j] = twoSum([3,2,4], 6)
-print(i,j)
+if __name__ == "__main__":
+    [i,j] = twoSum([3,2,4], 6)
+    print(i,j)
 

@@ -68,6 +68,9 @@ def lengthOfLongestSubstring(s):
 num = lengthOfLongestSubstring('abcabcbb')
 print(num, 'true: 3')
 
+num = lengthOfLongestSubstring('pwwke')
+print(num, 'true: 3')
+
 num = lengthOfLongestSubstring('aabcd')
 print(num, 'true: 4')
 
