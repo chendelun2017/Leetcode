@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 class Solution:
     def longestPalindrome_1(self, s):
-=======
-class Solution(object):
-    def longestPalindrome(self, s):
->>>>>>> 7ef9b367ec2b5efebc18b1be7666aeb0837331fc
         """
         :type s: str
         :rtype: str
         """
-<<<<<<< HEAD
         k = len(s)
         olist = [0] * k     # 申请长度为n的列表，并初始化
         nList = [0] * k     # 同上
@@ -53,28 +47,8 @@ class Solution(object):
 
 s = Solution()
 print(s.longestPalindrome('cbabc'), 'true = cbabc')
-=======
-        if s == '':
-            return ''
-        N = len(s)
-        if N == 1:
-            return s
-        for i in range(N):
-            j = N - 2
-            while j > i:
-                if s[j] == s[i]:
-                    return s[i:j+1]
-                j -= 1
-        return s[0]
-
-s = Solution()
->>>>>>> 7ef9b367ec2b5efebc18b1be7666aeb0837331fc
 print(s.longestPalindrome(''),'true = ')
 print(s.longestPalindrome('a'),'true = a')
 print(s.longestPalindrome('ac'),'true = a')
 print(s.longestPalindrome('abcdea'),'true = a')
-<<<<<<< HEAD
 print(s.longestPalindrome('bbbb'),'true = bbbb')
-=======
-print(s.longestPalindrome('bbbb'),'true = b')
->>>>>>> 7ef9b367ec2b5efebc18b1be7666aeb0837331fc
