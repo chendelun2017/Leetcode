@@ -18,7 +18,7 @@ class Solution(object):
             for j in pos:
                 dif = 0 - i - j
                 if dif in nums_hash:
-                    if dif in (i, j) and nums_hash[dif] >=2:  # 因为与i,j重复，所以判定nums_hash中 i 或 j 是否出现两次以上是否
+                    if dif in (i, j) and nums_hash[dif] >=2:  # 因为与i,j重复，所以判定nums_hash中 i 或 j 是否出现两次以上
                         ans.append([i, j, dif])
                     if dif < i or dif > j:
                         ans.append([i, j, dif])
