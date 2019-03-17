@@ -1,2 +1,2 @@
-this is the code of my leetcode!
-为什么显示不了中文呀~
+This is the code of my leetcode!
+And I will do some interesting things on it.
