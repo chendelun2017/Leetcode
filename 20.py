@@ -1,5 +1,5 @@
 class Solution(object):
-    def isValid(self, s):
+    def isValid_1(self, s):
         """
         :type s: str
         :rtype: bool
@@ -22,7 +22,25 @@ class Solution(object):
             return False
         return True
 
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        stack = []
+        match = {")": "(", "}": "{", "]": "["}
+        
+        for i in s:
+            if i in match:
+                top = stack.pop() if stack else '#'
+                if match[i] != top:
+                    return False
+            else:
+                stack.append(i)
+
+        return not stack
+
 
 s = Solution()
 print(s.isValid(''))
-print(s.isValid('{[(){}][]}'))
+print(s.isValid('()'))
