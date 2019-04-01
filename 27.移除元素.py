@@ -71,7 +71,7 @@ class Solution(object):
 
         return none_val
 
-# s = Solution()
-# print(s.removeElement([0,1,2,2,3,0,4,2], 2))
+s = Solution()
+print(s.removeElement([0,1,2,2,3,0,4,2], 2))
 
 
