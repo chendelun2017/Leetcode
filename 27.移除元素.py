@@ -63,5 +63,15 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        
+        none_val = 0
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[none_val] = nums[i]
+                none_val += 1
+
+        return none_val
+
+# s = Solution()
+# print(s.removeElement([0,1,2,2,3,0,4,2], 2))
+
 
